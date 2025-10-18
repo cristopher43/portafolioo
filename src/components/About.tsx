@@ -19,74 +19,109 @@ const About = () => {
 
                     <div className='flex-1'>
                         <p className='text-lg mb-8 text-gray-300'>
-                            Soy Cristopher Candia, estudiante de Ingeniería en Informática.
-                            Me apasiona la tecnología, el desarrollo web y aprender nuevas herramientas
-                            que me ayuden a crecer profesionalmente. En mi tiempo libre me gusta explorar
-                            proyectos creativos y mejorar mis habilidades día a día.
+                            Soy Cristopher Candia, estudiante de Ingeniería en Informática en Duoc UC y con formación técnica en Electromecánica, especializado en mantenimiento de maquinaria industrial.
+                            Me apasiona la tecnología, el desarrollo web y el aprendizaje continuo de nuevas herramientas que potencien mis habilidades profesionales.
+                            Además, cuento con experiencia práctica en mantenimiento de ascensores en Heavenward, lo que me ha permitido combinar conocimientos teóricos con soluciones prácticas en entornos reales.
+                            En mi tiempo libre me gusta explorar proyectos creativos y seguir desarrollando tanto mis habilidades en informática como mi conocimiento técnico-industrial.
+
                         </p>
 
                         <div className='space-y-6'>
-
-                            {/* Barra 1 */}
+                            {/* Barra 1 - HTML */}
                             <div className='flex items-center'>
-                                <label htmlFor='htmlandcss' className='w-3/12 flex items-center space-x-2'>
+                                <label htmlFor='html' className='w-3/12 flex items-center space-x-2'>
                                     <FontAwesomeIcon icon={faHtml5} bounce className='text-orange-500' />
                                     <span>HTML</span>
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
-                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-11/12'></div>
+                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full w-11/12'></div>
                                 </div>
                             </div>
 
-                            {/* Barra 2 */}
+                            {/* Barra 2 - Java */}
                             <div className='flex items-center'>
-                                <label htmlFor='javaandjs' className='w-3/12 flex items-center space-x-2'>
+                                <label htmlFor='java' className='w-3/12 flex items-center space-x-2'>
                                     <FontAwesomeIcon icon={faJava} bounce className='text-red-500' />
                                     <span>Java</span>
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
-                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-10/12'></div>
+                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full w-10/12'></div>
                                 </div>
                             </div>
 
-                            {/* Barra 3 */}
+                            {/* Barra 3 - Python */}
                             <div className='flex items-center'>
                                 <label htmlFor='python' className='w-3/12 flex items-center space-x-2'>
-                                    <FontAwesomeIcon icon={faPython} bounce className='text-blue-400' />
+                                    <FontAwesomeIcon icon={faPython} bounce className='text-yellow-400' />
                                     <span>Python</span>
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
-                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-9/12'></div>
+                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full w-9/12'></div>
                                 </div>
                             </div>
-                            {/* Barra 4 */}
+
+                            {/* Barra 4 - Bases de datos */}
                             <div className='flex items-center'>
-                                <label htmlFor='python' className='w-3/12 flex items-center space-x-2'>
+                                <label htmlFor='db' className='w-3/12 flex items-center space-x-2'>
                                     <FontAwesomeIcon icon={faKeybase} bounce className='text-blue-400' />
-                                    <span>Base de datos</span>
+                                    <span>Bases de Datos</span>
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
-                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-9/12'></div>
+                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full w-8/12'></div>
                                 </div>
                             </div>
-                            {/* Barra 5 */}
+
+                            {/* Barra 5 - TypeScript */}
                             <div className='flex items-center'>
-                                <label htmlFor='python' className='w-3/12 flex items-center space-x-2'>
-                                    <BiLogoTypescript className="text-blue-400 w-5 h-5 transform transition-transform duration-300 hover:scale-105" />
-                                    <span>Typescript</span>
+                                <label htmlFor='ts' className='w-3/12 flex items-center space-x-2'>
+                                    <BiLogoTypescript className="text-blue-500 w-5 h-5" />
+                                    <span>TypeScript</span>
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
-                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-9/12'></div>
+                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full w-8/12'></div>
                                 </div>
                             </div>
-                            {/* Barra 6 */}
+
+                            {/* Barra 6 - CSS */}
                             <div className='flex items-center'>
-                                <label htmlFor='python' className='w-3/12 flex items-center space-x-2'>
-                                    <FontAwesomeIcon icon={faCss} bounce className='text-blue-400' />
-                                    <span>Css</span>
+                                <label htmlFor='css' className='w-3/12 flex items-center space-x-2'>
+                                    <FontAwesomeIcon icon={faCss} bounce className='text-blue-300' />
+                                    <span>CSS</span>
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
-                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full transform transition-transform duration-300 hover:scale-105 w-9/12'></div>
+                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full w-10/12'></div>
+                                </div>
+                            </div>
+
+                            {/* Barra 7 - Mantenimiento Industrial */}
+                            <div className='flex items-center'>
+                                <label htmlFor='mantenimiento' className='w-3/12 flex items-center space-x-2'>
+                                    <FontAwesomeIcon icon={faCodepen} bounce className='text-gray-300' />
+                                    <span>Mantenimiento Industrial</span>
+                                </label>
+                                <div className='grow bg-gray-800 rounded-full h-2.5'>
+                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full w-10/12'></div>
+                                </div>
+                            </div>
+
+                            {/* Barra 8 - Electricidad y Electromecánica */}
+                            <div className='flex items-center'>
+                                <label htmlFor='electromecanica' className='w-3/12 flex items-center space-x-2'>
+                                    <FontAwesomeIcon icon={faCodepen} bounce className='text-yellow-300' />
+                                    <span>Electromecánica</span>
+                                </label>
+                                <div className='grow bg-gray-800 rounded-full h-2.5'>
+                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full w-9/12'></div>
+                                </div>
+                            </div>
+                            {/* Barra 9 - AutoCAD */}
+                            <div className='flex items-center'>
+                                <label htmlFor='autocad' className='w-3/12 flex items-center space-x-2'>
+                                    <FontAwesomeIcon icon={faCodepen} bounce className='text-red-400' />
+                                    <span>AutoCAD</span>
+                                </label>
+                                <div className='grow bg-gray-800 rounded-full h-2.5'>
+                                    <div className='bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full w-8/12'></div>
                                 </div>
                             </div>
 

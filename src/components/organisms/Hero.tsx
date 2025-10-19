@@ -1,13 +1,13 @@
 import React from 'react'
-import Heroimagen from '../assets/pedropas.png'
+import Heroimagen from '../../assets/pedropas.png'
 
 export const Hero = () => {
     return (
         <div className='bg-black text-white text-center py-16'>
-            <img 
-                src={Heroimagen} 
-                alt='Cristopher Candia' 
-                className='mx-auto w-48 h-48 rounded-full mb-6' 
+            <img
+                src={Heroimagen}
+                alt='Cristopher Candia'
+                className='mx-auto w-48 h-48 rounded-full mb-6'
             />
 
             <h1 className='text-4xl font-bold'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import imageen from '../assets/pedropas.png';
+import imageen from '../../assets/pedropas.png';
 
 const projects = [
     {

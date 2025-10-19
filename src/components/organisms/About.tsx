@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImage from '../assets/pedropas.png'
+import AboutImage from '../../assets/pedropas.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faJs, faJava, faPython, faCodepen, faKeybase, faCss } from '@fortawesome/free-brands-svg-icons';
 import { BiLogoTypescript } from "react-icons/bi";

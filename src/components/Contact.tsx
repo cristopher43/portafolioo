@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaGit, FaGithub, FaPhone } from 'react-icons/fa';
 
 export const Contact = () => {
   return (
@@ -17,23 +17,35 @@ export const Contact = () => {
             </p>
 
             <div className="mb-4 mt-8 flex items-center">
-              <FaEnvelope className="inline-block text-green-400 mr-2" />
+              <FaEnvelope className="inline-block text-purple-700 mr-2" />
               <a href="mailto:cristopher@example.com" className="hover:underline">
                 cristopher@example.com
               </a>
             </div>
 
             <div className="mb-4 flex items-center">
-              <FaPhone className="inline-block text-green-400 mr-2" />
+              <FaPhone className="inline-block text-purple-700 mr-2" />
               <span>+56 9 1234 5678</span>
             </div>
+            
+            
+            <div className="mb-4 flex items-center">
+              <FaGithub className="inline-block text-purple-700 mr-2" />
+              <a href="https://github.com/cristopher43?tab=repositories"
+              target = "_blank"
+              rel = "noopener  noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+
           </div>
           <div className='flex-1 w-full'>
             <form className='space-y-4'>
 
               {/*ingresar nombre*/}
               <div>
-                <label htmlFor="name"> tu nombre</label>
+                <label htmlFor="name"> Tu Nombre</label>
                 <input type="text"
                   className='w-full p-2 rounded bg-gray-800 border border-gray-600 foccus:outline-none
                 focus:border-green-400'
@@ -57,7 +69,7 @@ export const Contact = () => {
                   placeholder='ingrese mensage' />
               </div>
               {/*boton de nevio */}
-              <button className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full">
+              <button className="bg-gradient-to-r from-purple-400 to-blue-500 text-white hidden md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full">
                 enviar
               </button>
 

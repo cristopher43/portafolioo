@@ -9,3 +9,18 @@ export default {
   },
   plugins: [],
 }
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        pixelify: ['"Pixelify Sans"', 'sans-serif'],
+        jersey: ['"Jersey 10"', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+}

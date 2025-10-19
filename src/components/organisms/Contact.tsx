@@ -5,7 +5,9 @@ export const Contact = () => {
   return (
     <div className="bg-black text-white py-20" id="contacto">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">Contacto</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500 font-pixelify">
+          Contacto
+        </h2>
 
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <div className="flex-1">
@@ -27,13 +29,13 @@ export const Contact = () => {
               <FaPhone className="inline-block text-purple-700 mr-2" />
               <span>+56 9 1234 5678</span>
             </div>
-            
-            
+
+
             <div className="mb-4 flex items-center">
               <FaGithub className="inline-block text-purple-700 mr-2" />
               <a href="https://github.com/cristopher43?tab=repositories"
-              target = "_blank"
-              rel = "noopener  noreferrer"
+                target="_blank"
+                rel="noopener  noreferrer"
               >
                 GitHub
               </a>

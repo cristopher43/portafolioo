@@ -22,7 +22,7 @@ const Projects = () => {
     return (
         <div className="bg-black text-white py-20" id="proyectos">
             <div className="container mx-auto px-8 md:px-16 lg:px-24">
-                <h2 className="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500">
+                <h2 className="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500 font-pixelify">
                     Proyectos
                 </h2>
 

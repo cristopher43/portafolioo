@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImage from '../../assets/pedropas.png'
+import AboutImage from '../../assets/icon2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faJs, faJava, faPython, faCodepen, faKeybase, faCss } from '@fortawesome/free-brands-svg-icons';
 import { BiLogoTypescript } from "react-icons/bi";
@@ -124,20 +124,30 @@ const About = () => {
                                     <div className='bg-gradient-to-r from-violet-400 via-purple-500 to-fuchsia-500 h-2.5 rounded-full w-8/12'></div>
                                 </div>
                             </div>
+                            {/* JavaScript */}
+                            <div className='flex items-center'>
+                                <label htmlFor='javaScripit' className='w-3/12 flex items-center space-x-2'>
+                                    <FontAwesomeIcon icon={faJava} bounce className='text-red-400' />
+                                    <span>JavaScript</span>
+                                </label>
+                                <div className='grow bg-gray-800 rounded-full h-2.5'>
+                                    <div className='bg-gradient-to-r from-violet-400 via-purple-500 to-fuchsia-500 h-2.5 rounded-full w-8/12'></div>
+                                </div>
+                            </div>
 
-                            {/* Estadísticas */}
+                            {/* Estadisticas */}
                             <div className="mt-12 flex justify-between text-center">
                                 <div>
                                     <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-purple-500 to-fuchsia-500">
-                                        3+
+                                        2+
                                     </h3>
-                                    <p>proyectos</p>
+                                    <p>Proyectos personales</p>
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-purple-500 to-fuchsia-500">
                                         20+
                                     </h3>
-                                    <p>trabajos</p>
+                                    <p>Trabajos Prácticas</p>
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-purple-500 to-fuchsia-500">

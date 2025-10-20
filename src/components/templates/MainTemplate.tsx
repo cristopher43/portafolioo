@@ -7,13 +7,13 @@ import Footer from '../organisms/Footer';
 
 const MainTemplate: React.FC = () => {
     return (
-        <>
+        <div>
             <Hero />
             <About />
             <Services />
             <Projects />
             <Footer />
-        </>
+        </div>
     );
 };
 

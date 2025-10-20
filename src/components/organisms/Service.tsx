@@ -68,7 +68,6 @@ export const Service = () => {
 
                             <p className='mt-2 text-gray-300'>{service.description}</p>
                             <a href='#' className='mt-4 inline-block text-violet-400 hover:text-fuchsia-400 transition-colors duration-300'>
-                                Read More
                             </a>
                         </div>
                     ))}

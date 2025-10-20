@@ -1,19 +1,20 @@
 import React from 'react';
-import imageen from '../../assets/pedropas.png';
+import Edutech from '../../assets/Edutech.png';
+import Portafolio from '../../assets/Portafolio.png';
 
 const projects = [
     {
         id: 1,
         name: "EduTech - Sistema de Gestión de Cursos",
         technologies: ["Java", "Spring Boot", "HATEOAS", "Swagger", "JUnit", "Mockito"],
-        image: imageen,
+        image: Edutech,
         github: "https://github.com/VoodoooQ/Evaluaci-n-2",
     },
     {
         id: 2,
         name: "Portfolio Personal",
         technologies: ["React", "TailwindCSS", "TypeScript", "Vite"],
-        image: imageen,
+        image: Portafolio,
         github: "https://github.com/cristopher43/portafolioo"
     },
 ];

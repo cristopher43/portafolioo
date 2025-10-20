@@ -49,14 +49,7 @@ const Footer = () => {
                     >
                         <FaGithub />
                     </a>
-                    <a
-                        href="https://www.instagram.com/tu_usuario/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-violet-400 hover:text-fuchsia-400 transition-colors duration-300"
-                    >
-                        <FaInstagram />
-                    </a>
+                    
                 </div>
 
                 <p className="text-center text-gray-500 text-sm mt-6">

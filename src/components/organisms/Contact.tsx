@@ -21,13 +21,13 @@ export const Contact = () => {
             <div className="mb-4 mt-8 flex items-center">
               <FaEnvelope className="inline-block text-purple-700 mr-2" />
               <a href="mailto:cristopher@example.com" className="hover:underline">
-                cristopher@example.com
+                cricandi74@gmail.com
               </a>
             </div>
 
             <div className="mb-4 flex items-center">
               <FaPhone className="inline-block text-purple-700 mr-2" />
-              <span>+56 9 1234 5678</span>
+              <span>+56 9 6214 6916</span>
             </div>
 
 
@@ -61,7 +61,7 @@ export const Contact = () => {
                 focus:border-green-400'
                   placeholder='ingrese su email' />
               </div>
-              {/*ingrese mensaje */}
+              
               <div>
                 <label htmlFor="mensaje" className='block mb-2'>Mensaje</label>
                 <textarea
@@ -72,7 +72,7 @@ export const Contact = () => {
                 />
               </div>
 
-              {/*boton de nevio */}
+              {/*boton de envio */}
               <button className="bg-gradient-to-r from-purple-400 to-blue-500 text-white hidden md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full">
                 enviar
               </button>

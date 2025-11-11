@@ -1,49 +1,55 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import React from "react";
+import { render, screen, fireEvent, within } from "@testing-library/react";
 import Navbar from "../organisms/Navbar";
 
 describe("Navbar Component", () => {
-    
-    test("debería mostrar el logo", () => {
+    test("renderiza el logo", () => {
         render(<Navbar />);
-        expect(screen.getByText("CC")).toBeInTheDocument();
+        const logo = screen.getByText("CC");
+        expect(logo).toBeInTheDocument();
     });
 
-    test("debería mostrar los enlaces principales", () => {
+    test("renderiza los links de escritorio", () => {
         render(<Navbar />);
+        // Contenedor de escritorio tiene clases 'md:flex'
+        const desktopMenu = screen.getByRole("navigation").querySelector("div.md\\:flex");
+        expect(desktopMenu).toBeInTheDocument();
 
-        expect(screen.getByText("Home")).toBeInTheDocument();
-        expect(screen.getByText("Sobre mí")).toBeInTheDocument();
-        expect(screen.getByText("Servicios")).toBeInTheDocument();
-        expect(screen.getByText("Proyectos")).toBeInTheDocument();
-
-        // Contacto aparece dos veces → usamos getAllByText
-        const contactoLinks = screen.getAllByText("Contacto");
-        expect(contactoLinks.length).toBeGreaterThanOrEqual(1);
+        const links = ["Home", "Sobre mí", "Servicios", "Proyectos", "Contacto"];
+        links.forEach((link) => {
+            const element = within(desktopMenu!).getByText(link);
+            expect(element).toBeInTheDocument();
+        });
     });
 
-    test("debería mostrar el botón de menú móvil", () => {
+    test("menú móvil no se muestra por defecto", () => {
         render(<Navbar />);
-        expect(screen.getByText("☰")).toBeInTheDocument();
+        const mobileMenu = screen.getByRole("navigation").querySelector("div.flex-col");
+        expect(mobileMenu).toBeNull();
     });
 
-    test("debería abrir y cerrar el menú cuando se hace click en el botón ☰", () => {
+    test("al hacer clic en el botón hamburguesa, se muestra el menú móvil", () => {
         render(<Navbar />);
-        
-        const button = screen.getByText("☰");
-
-        // Antes del click: el menu está oculto (clase "hidden")
-        let menu = screen.getByRole("navigation").querySelector("div.flex-col");
-        expect(menu?.className.includes("hidden")).toBe(true);
-
-        // Click → el menú se abre
+        const button = screen.getByRole("button");
         fireEvent.click(button);
-        menu = screen.getByRole("navigation").querySelector("div.flex-col");
-        expect(menu?.className.includes("hidden")).toBe(false);
 
-        // Click nuevamente → el menú se cierra
-        fireEvent.click(button);
-        menu = screen.getByRole("navigation").querySelector("div.flex-col");
-        expect(menu?.className.includes("hidden")).toBe(true);
+        const mobileMenu = screen.getByRole("navigation").querySelector("div.flex-col");
+        expect(mobileMenu).toBeInTheDocument();
+
+        const mobileLinks = ["Home", "Sobre mí", "Servicios", "Proyectos", "Contacto"];
+        mobileLinks.forEach((link) => {
+            const element = within(mobileMenu!).getByText(link);
+            expect(element).toBeInTheDocument();
+        });
     });
 
+    test("al hacer clic nuevamente en el botón hamburguesa, se oculta el menú móvil", () => {
+        render(<Navbar />);
+        const button = screen.getByRole("button");
+        fireEvent.click(button); // abrir
+        fireEvent.click(button); // cerrar
+
+        const mobileMenu = screen.getByRole("navigation").querySelector("div.flex-col");
+        expect(mobileMenu).toBeNull();
+    });
 });

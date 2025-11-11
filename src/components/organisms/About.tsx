@@ -145,7 +145,7 @@ const About = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-purple-500 to-fuchsia-500">
-                                        20+
+                                        10+
                                     </h3>
                                     <p>Trabajos Prácticas</p>
                                 </div>

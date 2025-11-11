@@ -47,28 +47,36 @@ export const Contact = () => {
 
               {/*ingresar nombre*/}
               <div>
-                <label htmlFor="name"> Tu Nombre</label>
-                <input type="text"
-                  className='w-full p-2 rounded bg-gray-800 border border-gray-600 foccus:outline-none
-                focus:border-green-400'
-                  placeholder='ingrese su nombre' />
+                <label htmlFor="name">Tu Nombre</label>
+                <input
+                  id="name"
+                  className="w-full p-2 rounded bg-gray-800 border focus:border-green-400"
+                  placeholder="ingrese su nombre"
+                  type="text"
+                />
               </div>
-              {/*ingrese correo*/}
+
               <div>
-                <label htmlFor="email" className='block nb-2'> Correo</label>
-                <input type="text"
-                  className='w-full p-2 rounded bg-gray-800 border border-gray-600 foccus:outline-none
-                focus:border-green-400'
-                  placeholder='ingrese su email' />
+                <label htmlFor="email" className="block mb-2">
+                  Correo
+                </label>
+                <input
+                  id="email"
+                  className="w-full p-2 rounded bg-gray-800 border focus:border-green-400"
+                  placeholder="ingrese su email"
+                  type="email"
+                />
               </div>
-              
+
               <div>
-                <label htmlFor="mensaje" className='block mb-2'>Mensaje</label>
+                <label htmlFor="mensaje" className="block mb-2">
+                  Mensaje
+                </label>
                 <textarea
                   id="mensaje"
-                  className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400'
+                  className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
+                  placeholder="Ingrese mensaje"
                   rows={5}
-                  placeholder='Ingrese mensaje'
                 />
               </div>
 
